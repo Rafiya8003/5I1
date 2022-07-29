@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Registratiomn Form</title>
+    </head>
+    <body>
+        <center>
+            <h3>Customer Registration Form</h3>
+            <form>
+                <label>Visitor Name:</label><input type="text" pattern="[A-Za-z]+" maxlength="20" required autofocus />
+                <br/><br/>
+                <label>Number of Members</label><input type="number" maxlength="2" />
+                <br/><br/>
+                <label>Contact Number</label><input type="number"/><br/><br/>
+                <label>Email:</label><input type="email" />
+                <br/><br/>
+                <label>Type of food:</label>
+                <input type="checkbox" name="food" /><label>SouthIndian</label>
+                <input type="checkbox" name="food" /><label>NorthIndian</label>
+                <input type="checkbox" name="food" /><label>Chinese</label>
+                <input type="checkbox" name="food" /><label>Western</label>
+                <br/><br/>
+                <label>Room Status:</label>
+                <input type="checkbox" name="room" /><label>AC</label>
+                <input type="checkbox" name="room" /><label>Non-AC</label>
+                <br/><br/>
+                <label>Venue Preference</label>
+                <select>
+                    <option selected>--Select--</option>
+                    <option>Arena</option>
+                    <option>Fiesta</option>
+                    <option>Vista</option>
+                    <option>Mythri</option>
+                    <option >Magna</option>
+                    <option> Oasis</option>
+                    <option>Amoeba</option>
+                </select><br/><br/>
+                <input type="submit" value="BOOK"/>
+                <input type="reset"/>
+            </form>
+        </center>
+    </body>
+</html>

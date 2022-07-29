@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Customer Register</title>
+    </head>
+    <body>
+        <h3>Customer Registration</h3>
+        <table>
+            <tr>
+                <td>User Name:</td><td><input type="text" pattern="[A-Za-z]+" maxlength="15" required autofocus></td>
+            </tr>
+            <tr>
+                <td>Password:</td><td><input type="password" minlength="8" maxlength="12"/></td>
+            </tr>
+            <tr>
+                <td>Email:</td><td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                    <td><input type="radio" name="gender"/>Male
+                    <input type="radio" name="gender"/>Female
+                    <input type="radio" name="gender"/>Other</td>
+            </tr>
+            <tr>
+                <td>Age(in yrs):</td><td><input type="text" max="60" min="12"/></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                    <td><textarea rows="4" cols="20"></textarea></td>
+            </tr>
+            <tr>
+               <td>Company website:</td><td><input type="url"/></td>
+            </tr>
+            <tr>
+                <td>Choose country:</td>
+                <td>
+                    <select>
+                        <option>India</option>
+                        <option>Germany</option>
+                        <option>Japan</option>
+                        <option>United States</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Date of journey:</td><td><input type="date"/></td>
+            </tr>
+            <tr>
+                <td><input type="submit"/></td>
+                <td><input type="reset"/><td>
+            </tr>
+        </table>
+    </body>
+</html>
