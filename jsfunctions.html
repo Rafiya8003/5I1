@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p>Welcome To My Domain</p>
+        <input type="text" id="s1">
+        <input type="text" id="s2">
+        <button onclick="sample()">comparing two strings</button><br>
+        <p id="demo"></p>
+        <input type="text" id="s3">
+        <button onclick="ReverseString()">Reverse String</button><br>
+        <input type="text" id="s4">
+        <button onclick="alphanumeric()">Alpha numeric</button><br>
+        <input type="text" id="s5">
+        <button onclick="cardnumber()">cardnumber</button><br>
+        <script >
+            function sample() {
+    var s =document.getElementById("s1").value;
+    var s1 = document.getElementById("s2").value;
+    if(s==s1)
+    {
+        alert('two values are equal');
+    }
+    else
+    {
+        alert('two values are not equal');
+    }
+}
+function ReverseString() {
+ var str=document.getElementById("s3").value
+ if(!str || str.length < 2 ||
+         typeof str!== 'string') {
+     return 'Not valid';
+ }
+  
+ 
+ const revArray = [];
+ const length = str.length - 1;
+  
+
+ for(let i = length; i >= 0; i--) {
+     revArray.push(str[i]);
+ }
+  
+ alert(revArray.join(''));
+}
+
+//document.writeln(ReverseString("Think IT Think VVIT"))
+function alphanumeric()
+{
+    var inputtxt=document.getElementById("s4").value;
+ var letterNumber = /^[0-9a-zA-Z]+$/;
+ if((inputtxt.match(letterNumber)) )
+  {
+    alert("valid");
+   return true;
+  }
+  else
+  { 
+   alert("message"); 
+   return false;
+
+  }
+}
+//document.writeln(alphanumeric("987uh"));
+function cardnumber(inputxt)
+{
+    var inputxt=document.getElementById("s5").value;
+    var cardno = /^(?:3[47][0-9]{13})$/;
+    if(inputxt.match(cardno))
+    {
+        alert("valid");
+        return true;
+    }
+    else
+    {
+        alert("Not a valid Amercican Express credit card number!");
+        return false;
+
+    }
+}
+//document.writeln(cardnumber('89034567'));
+        </script>
+    </body>
+</html>
